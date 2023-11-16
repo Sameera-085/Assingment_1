@@ -14,13 +14,13 @@ jobs:
           command: |
             pip install numpy
             pip install scipy
-            pip install pytest  # Adjust based on your project
+            pip install pytest  
  
       # Run tests
       - run:
           name: Run tests
           command: |
-            pytest test_sparse_recommender.py # Adjust based on your project structure and testing framework
+            pytest test_sparse_recommender.py 
 
       # Start Docker daemon
       - setup_remote_docker:
